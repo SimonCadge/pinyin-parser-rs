@@ -456,7 +456,6 @@ impl Iterator for PinyinParserIter {
                                 | Alphabet::Ŋ => {
                                     /* we have read too much or too little; this candidate is not good; ignore. */
                                     self.it.rewind(fin_len);
-                                    continue;
                                 }
 
                                 Alphabet::R =>
